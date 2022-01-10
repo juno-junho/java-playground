@@ -12,5 +12,6 @@ public class InterateStream {
         // generate(Supplier s) : 주기만 하는 것. 입력이 없고 출력만 있음.
         Stream<Integer> oneStream = Stream.generate(() -> 1);
         oneStream.limit(10).forEach(System.out::println);
+
     }
 }

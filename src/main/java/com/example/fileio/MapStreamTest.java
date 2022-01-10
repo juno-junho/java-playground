@@ -14,7 +14,6 @@ public class MapStreamTest {
         };
 
         Stream<File> fileStream = Stream.of(fileArr);
-
         //map()으로 Stream<File>을 Stream<String>으로 변환
         Stream<String> fileNameStream = fileStream.map(File::getName);
         fileNameStream.forEach(System.out::println);
