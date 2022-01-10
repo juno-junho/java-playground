@@ -27,7 +27,7 @@ public class ReduceTest {
 //        Stream<Integer> intStream01 = Stream.of(strArr).map(String::length);
 
         // Stream<String>을 IntStream으로 반환. (위와 같은것인데 성능때문에 쓰는것)
-//       (s) -> s.length()
+//       (s) -> sg.length()
         IntStream intStream1 = Stream.of(strArr).mapToInt(String::length);
         IntStream intStream2 = Stream.of(strArr).mapToInt(String::length);
         IntStream intStream3 = Stream.of(strArr).mapToInt(String::length);
