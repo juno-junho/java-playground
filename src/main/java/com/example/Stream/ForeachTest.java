@@ -1,4 +1,4 @@
-package fileio;
+package Stream;
 
 import java.util.stream.IntStream;
 

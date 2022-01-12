@@ -1,4 +1,4 @@
-package fileio;
+package Stream;
 
 import java.util.Optional;
 import java.util.OptionalInt;
@@ -31,9 +31,17 @@ public class OptionalIntTest {
         System.out.println(optInt2.isPresent());   // false
 
         System.out.println(optInt1.getAsInt());  // 0
+        System.out.println(optInt1.equals(optInt2)); // false
 //		System.out.println(optInt2.getAsInt());  // NoSuchElementException
         System.out.println("optInt1="+optInt1);
         System.out.println("optInt2="+optInt2);
         System.out.println("optInt1.equals(optInt2)?"+optInt1.equals(optInt2));
+
+        Optional<String> optional = Optional.ofNullable(null);
+        Optional<String> optional1 = Optional.empty();
+//        System.out.println(optional1.get());
+        System.out.println(optional.isPresent());
+        System.out.println(optional.isPresent());
+        System.out.println(optional.equals(optional1));
     }
 }

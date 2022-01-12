@@ -1,16 +1,16 @@
-package fileio;
+package Stream;
 
 import java.io.File;
 import java.util.stream.Stream;
 
 public class MapStreamTest {
     public static void main(String[] args) {
-        File[] fileArr = {new File("./fileio/FileStream.java"),
-                new File("./fileio/JavaTest.java"),
-                new File("./fileio/JavaTest.java"),
-                new File("./fileio/FileStream.md"),
-                new File("./fileio/InterateStream.java"),
-                new File("./fileio/RandomStream.java")
+        File[] fileArr = {new File("Stream/FileStream.java"),
+                new File("Stream/JavaTest.java"),
+                new File("Stream/JavaTest.java"),
+                new File("Stream/FileStream.md"),
+                new File("Stream/InterateStream.java"),
+                new File("Stream/RandomStream.java")
         };
 
         Stream<File> fileStream = Stream.of(fileArr);

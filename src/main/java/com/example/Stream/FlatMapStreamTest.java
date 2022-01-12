@@ -1,4 +1,4 @@
-package fileio;
+package Stream;
 
 import java.util.*;
 import java.util.stream.*;

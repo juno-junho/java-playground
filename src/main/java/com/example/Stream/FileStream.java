@@ -1,4 +1,4 @@
-package fileio;
+package Stream;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public class FileStream {
     public static void main(String[] args) {
-        Path path = Paths.get("./fileio/JavaTest.java");
+        Path path = Paths.get("Stream/JavaTest.java");
 
         try {
             Stream<String> stringStream =  Files.lines(path);

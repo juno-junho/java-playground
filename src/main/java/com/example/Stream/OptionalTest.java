@@ -1,6 +1,4 @@
-package fileio;
-
-import jdk.nashorn.internal.runtime.options.Option;
+package Stream;
 
 import java.util.Optional;
 
