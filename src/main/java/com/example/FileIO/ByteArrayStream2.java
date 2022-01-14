@@ -12,7 +12,7 @@ public class ByteArrayStream2 {
     ByteArrayInputStream input  = null;
     ByteArrayOutputStream output = null;
 
-    input  = new ByteArrayInputStream(inSrc);
+    input  =
     output = new ByteArrayOutputStream();
 
     input.read(temp,0,temp.length); // 읽어 온 데이터를 배열 temp에 담는다.
