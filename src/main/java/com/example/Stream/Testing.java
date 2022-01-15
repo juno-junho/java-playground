@@ -1,11 +1,7 @@
 package Stream;
-
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -51,5 +47,15 @@ public class Testing {
 
         // then
         assertThat(exception.getMessage()).isEqualTo("Incorrect numbers");
+    }
+
+    @Test
+    void lotteryNumber(){
+        final LotteryGenerator lotteryGenerator = new LotteryGenerator();
+        final int price = 1000;
+
+        final List<Integer> lottery = lotteryGenerator.generate(price);
+        lottery.forEach(System.out::println);
+
     }
 }
