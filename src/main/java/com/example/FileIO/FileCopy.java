@@ -1,6 +1,8 @@
+package FileIO;
+
 import java.io.*;
 
-class FileCopy {
+public class FileCopy {
 	public static void main(String args[]) {
 		try {
 			FileInputStream  fis = new FileInputStream(args[0]);
