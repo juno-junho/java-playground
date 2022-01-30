@@ -15,14 +15,14 @@ public class MethodReference {
 //        Supplier<MyClass> s1 = MyClass::new;
 //        MyClass mc = s.get();
 //        System.out.println(mc);
-        Function<Integer,MyClass> f1 = MyClass::new;
+//        Function<Integer,MyClass> f1 = MyClass::new;
 //        Function<Integer,MyClass> f1 = (i) -> new MyClass(i);
-        MyClass mc = f1.apply(500);
-        System.out.println(mc.iv);
+//        MyClass mc = f1.apply(500);
+//        System.out.println(mc.iv);
 
-        Function<Integer,int[]> f2 = (i) ->  new int[i];
+//        Function<Integer,int[]> f2 = (i) ->  new int[i];
 //        Function<Integer,int[]> f2 = int[]::new; // 메소드 참조
-        System.out.println(f2.apply(100).length);
+//        System.out.println(f2.apply(100).length);
 
     }
 }

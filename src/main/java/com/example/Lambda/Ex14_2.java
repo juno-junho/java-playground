@@ -10,6 +10,16 @@ class Ex14_2 {
         Predicate<Integer> p = i -> i%2==0; // 짝수인지 검사.
         Function<Integer, Integer> f = i -> i/10*10; // i의 1의 자리를 없앤다.
 
+        //매개변수가 두개인 함수형 인터페이스
+        BiConsumer<Integer,Integer> biConsumer = (a, b) -> System.out.println(a * b);
+        BiFunction<Integer, Integer,Integer> biFunction = (a, b) -> a+b;
+        // 매개변수가 두개 이상인 함수형 인터페이스가 필요하다면 직접 만들어 써야한다.
+
+        // UnaryOperator BinaryOperator
+        UnaryOperator<Integer> unaryOperator = i -> i/10*10;
+        BinaryOperator<Integer> binaryOperator = (a, b) -> a+b;
+
+
         List<Integer> list = new ArrayList<>();
         makeRandomList(s, list);    // list를 random값으로 채운다
         System.out.println(list);
