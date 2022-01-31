@@ -16,14 +16,17 @@ class Ex14_1 {
 
     public static void main(String[] args) {
         // 람다식으로 MyFunction의 run()을 구현
-        MyFunction f1 = ()-> System.out.println("f1.run()");
-
+        MyFunction f1 =(MyFunction)(()-> System.out.println("f1.run()"));
+        Object object = (MyFunction) (() -> System.out.println("f1.run()"));
+        System.out.println(object.toString());
         MyFunction f2 = new MyFunction() {
             // 익명 클래스로 run() 구현
             public void run() {//반드시 public 붙혀야함.
                 System.out.println("f2.run()");
             }
         };
+        Object object2 = f2.toString();
+        System.out.println(object2);
 
         MyFunction f3 = getMyFunction();
 
