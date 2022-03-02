@@ -1,5 +1,7 @@
 package array;
 
+import java.util.Arrays;
+
 public class Ex5_1_tmp {
     public static void main(String[] args) {
         int[] score;    // 1. 배열 score 선언(참조변수)
@@ -16,6 +18,13 @@ public class Ex5_1_tmp {
 
         int value = 100;
         System.out.println("value = " + value);
+
+        int[] iArr = {100, 95, 80, 75, 65};
+        for (int i = 0; i < iArr.length; i++) {
+            System.out.println(iArr[i]);
+        }
+        System.out.println("----------");
+        System.out.println(Arrays.toString(iArr));
 
     }
 }
