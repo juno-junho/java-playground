@@ -16,6 +16,8 @@ public class Ex11_5 {
         list.add("4");
         list.add("5");
 
+
+        // 값 가지고 오는 방법 1.
         Iterator it = list.iterator();
 
         while(it.hasNext()) {
@@ -29,6 +31,8 @@ public class Ex11_5 {
         // Iterator는 변수가 있어서 다음에 읽어올 것을 가리키고 있다.
         // 끝까지 가고 나면 더이상 읽어 올것이 없기 때문에 iterator를 다시 얻어와야한다.
         // ITERATOR는 일회용이다.!
+
+        // 값 가지고 오는 방법 2.
         for (int i = 0; i < list.size() ; i++) {
             Object obj = list.get(i);
             System.out.println(obj);
