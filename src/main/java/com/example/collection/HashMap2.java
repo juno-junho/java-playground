@@ -12,10 +12,12 @@ public class HashMap2 {
         map.put("안자바", 90);
 
         Set set = map.entrySet();
+//        System.out.println(set);
         Iterator it = set.iterator();
 
         while(it.hasNext()) {
             Map.Entry e = (Map.Entry)it.next();
+//            System.out.println(e);
             System.out.println("이름 : "+ e.getKey() + ", 점수 : " + e.getValue());
         }
 
