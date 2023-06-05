@@ -1,6 +1,7 @@
-package Lambda;
+package com.example.Lambda;
 
-import com.google.common.base.Function;
+
+import java.util.function.Function;
 
 public class MethodReference {
     public static void main(String[] args) {
